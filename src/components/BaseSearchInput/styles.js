@@ -1,17 +1,22 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { COLORS } from '../../global/colors';
 
 export const useStyles = makeStyles((theme) => ({
   root: {
-    padding: '2px 4px',
+    padding: '2px 14px',
     display: 'flex',
     alignItems: 'center',
-    width: 400,
+    width: 300,
+    background: COLORS.SECONDARY,
+    color: COLORS.TEXT,
+    borderRadius: 40
   },
   input: {
     marginLeft: theme.spacing(1),
     flex: 1,
   },
   iconButton: {
-    padding: 10,
+    padding: 0,
+    color: COLORS.BORDER
   },
 }));

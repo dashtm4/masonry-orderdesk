@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;700&display=swap');
+
+$color-white: #fff;
+$color-light--400: #E0E0E0;
+$color-black: #000;
+$color-blue--700: #495B71;
+$color-blue--800: #20374F;
+$color--primary: $color-black;
+$color-topbar--bg: $color-blue--700;
+$color-menubar--bg: $color-blue--800;
+$color-footer--bg: $color-blue--800;
+$font--primary: 'Roboto';
+$height--topbar: 40px;
+$height--menubar: 80px;
+$height--header: $height--topbar+$height--menubar;
+$height--footer: 396px;
+
+@mixin font-style($font-color, $font-family, $font-size, $weight: 400) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $weight;
+    color: $font-color;
+}
+
+@mixin flex-layout($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin flex-layout-align($js-value, $ai-value) {
+    justify-content: $js-value;
+    align-items: $ai-value;
+}
